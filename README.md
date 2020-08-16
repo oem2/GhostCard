@@ -1,6 +1,6 @@
-# Ghost Starter Theme
+# GhostCard
 
-A starter framework for Ghost themes! Fork this repository and start your development here with all the main things you need to develop a custom Ghost theme.
+This is a vCard framework for Ghost Theme. If you like the work, please star this repo. Bugs or feature requests? File an issue. I will try and fix it as soon as possible. This theme is based off the Ghost Starter theme.
 
 &nbsp;
 
