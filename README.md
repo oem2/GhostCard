@@ -29,6 +29,8 @@ One neat trick is that you can also create custom one-off templates just by addi
 
 # Development
 
+The latest version of node supported by Ghost is v12.10.0. If you are using the latest version (16.x) and would like to work with Ghost, you will either need to downgrade or use nodeenv (recommended): http://fullstackhybrid.com/installing-node-packages-with-nodeenv/
+
 Styles are compiled using Gulp/PostCSS to polyfill future CSS spec. You'll need [Node](https://nodejs.org/), [Yarn](https://yarnpkg.com/) and [Gulp](https://gulpjs.com) installed globally. After that, from the theme's root directory:
 
 ```bash
@@ -58,4 +60,4 @@ yarn zip
 
 # Copyright & License
 
-Copyright (c) 2013-2020 Ghost Foundation - Released under the [MIT license](LICENSE).
+Copyright (c) 2013-2020 Orrett Morgan - This theme is licensed under both the [MIT license](LICENSE) and [Creative Commons Attribution 3.0] (LICENSE). Please note that the terms of the Creative Commons license require that you maintain the footer attribution to freely use this theme.
