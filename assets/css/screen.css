@@ -236,3 +236,15 @@ html,
         font-size: 1.6rem;
     }
 }
+
+/* Home Page
+/* ---------------------------------------------------------- */
+
+.gh-home-content {
+    height: 12vmin;
+    width: 12vmin;
+    margin: 0 auto 1.5em;
+    border-radius: 100%;
+    overflow: hidden;
+    object-fit: cover;
+}
