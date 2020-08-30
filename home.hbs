@@ -1,35 +1,17 @@
-{{!-- Main --}}
-
 {{!< default}}
 
-<div class="gh-page">
-    <div class="gh-container">
-        <header class="gh-page-head">
-            {{#page}}
-                <div class="gh-home-content">
-                    <h2>{{title}}</h2>
-                    <h3>{{content}}</h3>
-                </div>
-            {{/page}}
-            <div class="gh-author-meta">
-                <div class="gh-author-links">
-                    {{#if website}}
-                        <a href="{{website}}" target="_blank" rel="noopener">Website</a>
-                    {{/if}}
-                    {{#if twitter}}
-                        <a href="{{twitter_url}}" target="_blank" rel="noopener">Twitter</a>
-                    {{/if}}
-                    {{#if facebook}}
-                        <a href="{{facebook_url}}" target="_blank" rel="noopener">Facebook</a>
-                    {{/if}}
-                </div>
-            </div>
-
-            {{#if cover_image}}
-                <img class="gh-page-image" src="{{cover_image}}" alt="{{name}}" />
+{{#page}}
+        <h3 class="gh-home-meta">{{content}}</h3>
+            {{#if feature_image}}
+                <img class="gh-home-feature-image"
+                    srcset="{{img_url feature_image size="s"}} 150w,
+                            {{img_url feature_image size="m"}} 300w,
+                            {{img_url feature_image size="l"}} 500w,
+                            {{img_url feature_image size="xl"}} 1000w"
+                    sizes="(max-width: 500px) 500px, 1000px"
+                    loading="lazy"
+                    src="{{img_url feature_image size="s"}}"
+                    alt="{{title}}"
+                />
             {{/if}}
-        </header>
-        <div class="gh-postfeed">
-        </div>
-    </div>
-</div>
+{{/page}}
